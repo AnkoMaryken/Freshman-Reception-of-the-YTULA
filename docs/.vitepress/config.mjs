@@ -10,7 +10,10 @@ export default defineConfig({
   title: siteTitle,
   description: siteDescription,
   lang: 'zh-CN',
-  base: '/',
+  // GitHub Pages 子路径部署：base 必须与仓库名一致
+  // 例如仓库名为 Freshman-Reception-of-the-YTULA 时：base: '/Freshman-Reception-of-the-YTULA/'
+  // 如果使用自定义域名（如 docs.ytu.edu.cn）或部署到根路径，改为 base: '/'
+  base: '/Freshman-Reception-of-the-YTULA/',
 
   // ===== 页面元数据 =====
   head: [
