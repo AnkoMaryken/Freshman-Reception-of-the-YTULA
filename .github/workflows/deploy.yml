@@ -39,9 +39,11 @@ jobs:
         run: npm ci
 
       - name: 构建文档站点
-        # GitHub Actions 是干净环境，直接使用 VitePress 原生构建命令，
-        # 不经过本地沙箱兼容包装脚本（scripts/build.mjs）
-        run: npx vitepress build docs
+        # GitHub Actions 是 Linux 干净环境，原生构建命令完全兼容，
+        # 不受本地沙箱文件删除限制的影响
+        run: |
+          rm -rf docs/.vitepress/dist
+          npx vitepress build docs
 
       - name: 配置 Pages
         uses: actions/configure-pages@v4
