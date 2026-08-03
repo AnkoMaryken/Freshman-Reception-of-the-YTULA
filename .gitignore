@@ -1,0 +1,37 @@
+# ===== 依赖 =====
+node_modules/
+.pnpm-store/
+
+# ===== 构建产物 =====
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+
+# ===== VitePress 临时文件 =====
+*.timestamp-*.mjs
+
+# ===== 环境变量 =====
+.env
+.env.local
+.env.*.local
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ===== 操作系统 =====
+Thumbs.db
+Desktop.ini
+
+# ===== 日志 =====
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# ===== 临时文件 =====
+*.tmp
+.cache/

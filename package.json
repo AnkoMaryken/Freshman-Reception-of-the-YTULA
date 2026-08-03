@@ -1,0 +1,14 @@
+{
+  "name": "vitepress-docs-site",
+  "version": "1.0.0",
+  "description": "基于 VitePress 的静态文档站点",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "node scripts/build.mjs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
